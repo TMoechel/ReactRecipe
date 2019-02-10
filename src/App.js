@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
+import RecipeDetail from './RecipeDetail/RecipeDetail'
+
 import './App.css';
-import Button from 'react-bootstrap/Button';
-import Title from './Title/Title';
-import Description from './Description/Description';
+
+const RecipeData = [
+  {
+    Title: 'Gemüselasagne',
+    Description: 'Schnell zubereitet, schmeckt sehr lecker'
+  },
+  {
+    Title: 'Pizza Romana',
+    Description: 'Frische Pizaa mit Tomanten und Käse'
+  }
+]
 
 class App extends Component {
   render() {
     return (
       <div>
       <header className="App-header">
-        <Title Title="Gemüselasagne"/>
-        <Description Description="Schnell zubereitet, schmeckt sehr lecker"/>
+        <h2> Recipe App </h2>
       </header>
       <div>
-        <Button variant="primary"> Insert Recipe></Button>
+        <RecipeDetail RecipeDetail={RecipeData[0]} />
       </div>
       </div>
     );
