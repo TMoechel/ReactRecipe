@@ -10,7 +10,7 @@ const RecipeData = [
   },
   {
     Title: 'Pizza Romana',
-    Description: 'Frische Pizaa mit Tomanten und Käse'
+    Description: 'Frische Piza mit Tomanten und Käse'
   }
 ]
 

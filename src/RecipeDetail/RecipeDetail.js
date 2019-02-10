@@ -5,12 +5,14 @@ import Description from '../Description/Description';
 class RecipeDetail extends React.Component {
     constructor(props) {
         super(props);
+        
     }
     render() {
+        const {RecipeDetail} = this.props;
         return (
             <div>
-                <Title Title = {this.props.RecipeDetail.Title} />
-                <Description Description = {this.props.RecipeDetail.Description}/>
+                <Title Title = {RecipeDetail.Title} />
+                <Description Description = {RecipeDetail.Description}/>
             </div>
         )
     }
